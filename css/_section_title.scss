@@ -1,0 +1,83 @@
+.section-title {
+  @include dFlex(column, center, center);
+
+  padding: 50px 0px 60px 0px;
+
+  h1 {
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: var(--text-color-mode);
+  }
+  span {
+    @include dFlex(column, center, center);
+
+    font-size: 0.8em;
+    color: var(--color-theme);
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      background: var(--color-theme);
+    }
+    &::before {
+      left: -30px;
+    }
+    &::after {
+      right: -30px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    padding: 35px 0px 25px 0px;
+
+    h1 {
+      font-size: 2em;
+    }
+    span {
+      font-size: 0.5em;
+
+      &::before,
+      &::after {
+        width: 18px;
+        height: 1px;
+      }
+      &::before {
+        left: -20px;
+      }
+      &::after {
+        right: -20px;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 576.98px) and (max-width: 992px) {
+  .section-title {
+    padding: 70px 0px 35px 0px;
+
+    h1 {
+      font-size: 2.2em;
+    }
+    span {
+      font-size: 0.7em;
+
+      &::before,
+      &::after {
+        width: 22px;
+      }
+      &::before {
+        left: -24px;
+      }
+      &::after {
+        right: -24px;
+      }
+    }
+  }
+}

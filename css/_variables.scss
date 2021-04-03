@@ -1,0 +1,65 @@
+$font-stack: Arial, Helvetica, sans-serif;
+$red: #ff3b30;
+$orange: #ff9500;
+$yellow: #ffcc00;
+$green: #34c759;
+$teal: #5ac8fa;
+$blue: #007aff;
+$indigo: #5856d6;
+$purple: #af52de;
+$pink: #ff2d55;
+// light mode
+$light_01: #f2f2f2;
+$light_02: #e5e5e5;
+$light_03: #d1d1d6;
+$light_04: #c7c7c7;
+$light_05: #aeaeb2;
+$light_06: #8e8e93;
+// dark mode
+$dark_01: #1c1c1c;
+$dark_02: #2c2c2e;
+$dark_03: #3a3a3c;
+$dark_04: #484844;
+$dark_05: #636366;
+$dark_06: #8e8e93;
+
+$icon_fc: #4267b2;
+$icon_twitter: #1da1f2;
+$icon_inst: #e1306c;
+$icon_linkedin: #5e75da;
+$icon_githup: #f2f2f2;
+$icon_youtube: #ff0000;
+
+$skills_html: 90%;
+$skills_css: 95%;
+$skills_php: 80%;
+$skills_javascript: 90%;
+$skills_reactjs: 70%;
+$skills_mysql: 75%;
+
+html {
+  --text-color-mode: #fff;
+  --text-color-normal: #f2f2f2;
+  --text-color-light: #e5e5e5;
+
+  --background-color-mode: #000;
+  --background-color-normal: #2c2c2e;
+  --background-color-riched: #171717;
+
+  --color-theme: #ff2d55;
+  --color-sc-theme: var(--color-theme);
+}
+
+html[data-theme="dark"] {
+  --text-color-mode: #000;
+  --text-color-normal: #171717;
+  --text-color-light: #2c2c2e;
+
+  --background-color-mode: #fff;
+  --background-color-normal: #e5e5e5;
+  --background-color-riched: #c7c7c7;
+
+  --background-theme: #ff2d55;
+  --color-theme: #ff2d55;
+  --color-sc-theme: var(--color-theme);
+}

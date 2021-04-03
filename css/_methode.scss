@@ -1,0 +1,43 @@
+@mixin dFlex($direction, $j-content, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $j-content;
+  align-items: $align;
+}
+
+@mixin dGrid($mw, $width, $gap) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($mw, $width));
+  grid-gap: $gap;
+}
+
+@mixin btn($padd, $size, $dsp, $color, $back, $b-radius) {
+  padding: $padd;
+  font-size: $size;
+  display: $dsp;
+  color: $color;
+  background: $back;
+  border-radius: $b-radius;
+}
+
+@mixin icon($w, $h, $size, $color, $back, $b-radius) {
+  width: $w;
+  height: $h;
+  font-size: $size;
+  color: $color;
+  background: $back;
+  border-radius: $b-radius;
+}
+
+@mixin back($color, $img) {
+  background: $color, url($img);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@mixin position($top, $left, $transform) {
+  top: $top;
+  left: $left;
+  transform: $transform;
+}

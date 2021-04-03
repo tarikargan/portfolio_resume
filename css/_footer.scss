@@ -1,0 +1,22 @@
+footer {
+  padding: 50px 5%;
+  background: var(--text-color-light);
+  p {
+    @include dFlex(row, center, center);
+    color: var(--background-color-normal);
+    font-size: 1.2em;
+
+    span {
+      color: var(--color-theme);
+      margin: 0 2px;
+    }
+  }
+}
+@media (max-width:567px){
+  footer {
+  padding: 30px 5%;
+  p {
+    font-size: 0.8em;
+  }
+}
+}
